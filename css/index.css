@@ -181,6 +181,10 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
+h3 {
+  font-size: 2.8rem;
+  padding-bottom: 10px;
+}
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
@@ -265,6 +269,54 @@ header nav a:hover {
   header {
     flex-direction: column;
   }
+}
+.footer-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: black;
+  padding: 0 50px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 30px;
+}
+footer div {
+  max-width: 350px;
+  color: white;
+  padding: 20px;
+}
+footer p {
+  font-size: 1.4rem;
+}
+footer .footer-about img {
+  height: 40px;
+}
+footer .footer-links nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+footer .footer-links nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-transform: unset;
+  padding: 3px 0;
+}
+footer .footer-links nav a:hover {
+  color: #ffc107;
 }
 .intro-section {
   background: white;

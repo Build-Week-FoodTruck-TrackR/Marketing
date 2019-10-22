@@ -1,0 +1,44 @@
+.footer-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: black;
+    padding: 0 50px;
+}
+
+footer {
+    .flexbox(row, space-evenly, stretch, wrap);
+    margin: 0 auto;
+    padding: 30px;
+
+    div {
+        max-width: 350px;
+        // width: calc(25% - 30px);
+        color: white;
+        padding: 20px;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .footer-about {
+        img {
+            height: 40px;
+        }
+    }
+   
+    .footer-links {
+        nav {
+            .flexbox(column, space-evenly, flex-start, nowrap);
+            a {
+                .nav-links();
+                text-transform: unset;
+                padding: 3px 0;
+            }
+        }
+    }
+}
