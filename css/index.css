@@ -280,6 +280,12 @@ header nav a:hover {
   background: black;
   padding: 0 50px;
 }
+.footer-section > p {
+  border-top: 1px solid #ffc107;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
 footer {
   display: flex;
   flex-direction: row;
