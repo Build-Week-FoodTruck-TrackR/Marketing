@@ -1,8 +1,22 @@
+.header-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: black;
+}
+
+
 header {
     .flexbox(row, space-between, center, nowrap);
-    width: 60%;
     margin: 0 auto;
     padding: 25px 0;
+    width: 55%;
+    img {
+        height: 50px;
+    }
     nav {
         .flexbox(row, space-evenly, center, nowrap);
         a {
