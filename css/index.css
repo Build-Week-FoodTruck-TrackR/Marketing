@@ -206,19 +206,29 @@ img {
   margin-left: -50vw;
   margin-right: -50vw;
   background: black;
+  padding: 0 50px;
 }
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: nowrap;
   margin: 0 auto;
   padding: 25px 0;
-  width: 55%;
 }
 header img {
   height: 50px;
+}
+@media (max-width: 800px) {
+  header img {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  header img {
+    margin-bottom: unset;
+  }
 }
 header nav {
   display: flex;
@@ -232,10 +242,29 @@ header nav a {
   color: white;
   font-size: 1.6rem;
   text-transform: uppercase;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 header nav a:hover {
   color: #ffc107;
+}
+@media (max-width: 500px) {
+  header nav a {
+    border-bottom: 2px solid #ffc107;
+    width: 70vw;
+    font-size: 1.8rem;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
 }
 .intro-section {
   background: white;

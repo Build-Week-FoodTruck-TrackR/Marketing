@@ -6,22 +6,47 @@
     margin-left: -50vw;
     margin-right: -50vw;
     background: black;
+    padding: 0 50px;
 }
 
 
 header {
-    .flexbox(row, space-between, center, nowrap);
+    .flexbox(row, space-evenly, center, nowrap);
     margin: 0 auto;
     padding: 25px 0;
-    width: 55%;
+    // width: 55%;
     img {
         height: 50px;
+
+        @media @tablet {
+            margin-bottom: 20px;
+        }
+
+        @media @mobile {
+            margin-bottom: unset;
+        }
     }
     nav {
         .flexbox(row, space-evenly, center, nowrap);
         a {
             .nav-links();
-            padding: 0 30px;
+            padding: 0 20px;
+
+            @media @mobile {
+                border-bottom: 2px solid @main-color;
+                width: 70vw;
+                font-size: 1.8rem;
+                padding: 20px 0;
+            }
         }
+
+        @media @mobile {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    @media @tablet {
+        flex-direction: column;
     }
 }
