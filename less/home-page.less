@@ -1,0 +1,152 @@
+// Home Content
+
+
+.container-home { // Main-content
+    .context {
+        background-color: #05F9EA;
+        padding: 5%;
+        border-radius: 5%;;
+    }
+
+    .hero { // hero content
+        max-width: 100%;
+        .flexing(space-between, center);
+        flex-direction: row-reverse;
+        padding-top: 10%;
+        padding-right: 2%;
+
+        
+
+        img {
+            max-width: 50%;
+            border-radius: 25%;
+        }
+
+        h2 {
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 5%;
+           
+        }
+      
+    } // end of hero content
+    
+    .about-us{ // About us part
+        .flexing(space-between, center);
+        max-width: 100%;
+        padding-top: 10%;
+        padding-left: 2%;
+
+        h2{
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            margin-right: 2%;
+        }
+
+        img {
+            max-width: 50%;
+            border-radius: 25%;;
+        }
+    } // end of about us part
+
+    .app { // Beginning of App content
+        .flexing(space-between, center);
+        flex-direction: row-reverse;
+        max-width: 100%;
+        padding-top: 10%;
+        padding-left: 2%;
+        
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            
+        }
+
+        img{
+            max-width: 50%;
+            border-radius: 25%;
+            padding-right: 2%;
+        }
+        } // end of APP CONTENT
+
+        .vendors {// Vendors 
+            .flexing(space-between, center);
+            max-width: 100%;
+            padding-top: 10%;
+            padding-left: 2%;
+            padding-bottom: 2%;
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                padding-right: 2%;
+            }
+
+            img{
+                max-width: 50%;
+                border-radius: 25%;;
+            }
+
+        }// end of vendors
+
+        .bottom-list{
+            padding-top: 5%;
+            background-color: #F08080;    ;
+            width: 100%;
+            padding: 2%;
+            margin: 0;
+            font-size: 2rem;
+           
+            a { // Start of Anchors 
+                color: white;
+                font-weight:  100;
+                letter-spacing: 2px;
+                text-decoration: none;
+                padding: 20px 5px;
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                transition:all 0.5;
+        
+                &:hover{
+                    background:rbga(0,0,0,0.3);
+                }
+            }// end of anchors
+        
+            .flex-nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                .flexing(space-around, center);
+                align-items: baseline;
+        
+                li {
+                    .flexing(space-around, center);
+                    
+                }
+            }
+            .login {
+                .custom-anchor(#87CEFA, 150px, khaki);
+            }
+            
+            .signUp {
+                .custom-anchor(#DAA520, 150px, #FF4500);
+            }
+            
+        }
+
+       
+}
