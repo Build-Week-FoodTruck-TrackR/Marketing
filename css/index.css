@@ -1,3 +1,18 @@
+.button-yellow {
+  background: #ffc107;
+  border: unset;
+  font-size: 1.6rem;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid #ffc107;
+}
+.button-yellow:hover {
+  background: white;
+  border: 1px solid #ffc107;
+  color: black;
+  cursor: pointer;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -125,4 +140,193 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 60%;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 0 30px;
+}
+.intro-section {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.intro-section div.intro-img {
+  margin-top: 100px;
+  width: 50%;
+  padding: 50px;
+}
+@media (max-width: 500px) {
+  .intro-section div.intro-img {
+    display: none;
+  }
+}
+.intro-section div.intro-text {
+  margin-top: 100px;
+  width: 50%;
+  padding: 50px;
+}
+@media (max-width: 500px) {
+  .intro-section div.intro-text {
+    width: 90%;
+  }
+}
+.main-container .section-header {
+  padding: 50px;
+  text-align: center;
+}
+.how-it-works {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: #f2f2f2;
+}
+.how-it-works div.flex {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.how-it-works div.flex div.info-box {
+  width: calc(50% - 50px);
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.how-it-works div.flex div.info-box h2 {
+  text-align: center;
+}
+.how-it-works div.flex div.info-box ul li {
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .how-it-works div.flex div.info-box {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .how-it-works div.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+.button1 {
+  background: black;
+  border: unset;
+  font-size: 1.6rem;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.button1:hover {
+  background: white;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+.button2 {
+  background: #ffc107;
+  border: unset;
+  font-size: 1.6rem;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid #ffc107;
+}
+.button2:hover {
+  background: white;
+  border: 1px solid #ffc107;
+  color: black;
+  cursor: pointer;
 }

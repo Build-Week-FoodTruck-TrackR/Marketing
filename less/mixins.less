@@ -1,0 +1,47 @@
+.flexbox(@flexdir: row, @justify-content, @align-items, @flex-wrap) {
+    display: flex;
+    flex-direction: @flexdir;
+    justify-content: @justify-content;
+    align-items: @align-items;
+    flex-wrap: @flex-wrap;
+}
+
+.nav-links() {
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.button-black() {
+    background: black;
+    border: unset;
+    font-size: 1.6rem;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+    &:hover {
+        background: white;
+        border: 1px solid black;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+.button-yellow {
+    background: #ffc107;
+    border: unset;
+    font-size: 1.6rem;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 1px solid #ffc107;
+
+    &:hover {
+        background: white;
+        border: 1px solid #ffc107;
+        color: black;
+        cursor: pointer;
+    }
+}
