@@ -163,6 +163,7 @@ html {
 }
 html,
 body {
+  overflow-x: hidden;
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0 auto;
 }
