@@ -389,6 +389,11 @@ footer .footer-links nav a:hover {
   padding: 10px 20px;
   font-size: 2rem;
 }
+.how-it-works div.flex div.info-box ul li:hover {
+  cursor: pointer;
+  font-size: 2.2rem;
+  color: #ffc107;
+}
 @media (max-width: 800px) {
   .how-it-works div.flex div.info-box {
     width: 80%;
