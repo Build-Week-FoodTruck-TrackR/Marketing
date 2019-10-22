@@ -439,3 +439,21 @@ footer .footer-links nav a:hover {
   color: black;
   cursor: pointer;
 }
+.the-team h2 {
+  text-align: center;
+}
+.the-team .team-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.the-team .team-info div {
+  border: 1px solid black;
+  width: 250px;
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  height: 350px;
+}
