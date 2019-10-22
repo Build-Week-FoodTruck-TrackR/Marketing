@@ -1,0 +1,22 @@
+// flex
+
+.flexing (@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-anchor(@bg-color: lavender, @width: 10px, @txt-color: black){
+    background-color: @bg-color;
+    border-radius: 20px;
+    cursor: pointer;
+    width: @width;
+    height: 5%;
+    font-size: 1.6rem;
+    color: @txt-color;
+
+    &:hover{
+        background-color: @txt-color;
+        color: @bg-color;
+    }
+}
