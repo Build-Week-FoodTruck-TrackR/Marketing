@@ -1,3 +1,8 @@
+.section-header {
+    padding: 50px;
+    text-align: center;
+}
+
 .intro-section {
    background: white;
     .flexbox(row, space-evenly, center, nowrap);
@@ -23,11 +28,6 @@
     }
 }
 
-
-.main-container .section-header {
-    padding: 50px;
-    text-align: center;
-}
 
 
 .how-it-works {
@@ -71,6 +71,35 @@
 }
 
 
+.app-section {
+    background: @main-color;
+    color: black;
+    border-bottom: 2px solid white;
+    padding-bottom: 50px;
+
+    .install-app {
+        .flexbox(row, space-evenly, flex-start, nowrap);
+
+        img {
+            max-width: 500px;
+            flex: 1;
+        }
+
+        div img {
+            max-width: 200px;
+            height: 80px;
+            padding: 10px 10px 0 0;
+        }
+
+        div p {
+            margin-top: 10px;
+        }
+
+        @media @tablet {
+            flex-direction: column;
+        }
+    }
+}
 
 
 

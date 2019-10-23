@@ -315,6 +315,10 @@ footer .footer-links nav a {
 footer .footer-links nav a:hover {
   color: #ffc107;
 }
+.section-header {
+  padding: 50px;
+  text-align: center;
+}
 .intro-section {
   background: white;
   display: flex;
@@ -342,10 +346,6 @@ footer .footer-links nav a:hover {
   .intro-section div.intro-text {
     width: 90%;
   }
-}
-.main-container .section-header {
-  padding: 50px;
-  text-align: center;
 }
 .how-it-works {
   background: #f2f2f2;
@@ -392,6 +392,36 @@ footer .footer-links nav a:hover {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
+  }
+}
+.app-section {
+  background: #ffc107;
+  color: black;
+  border-bottom: 2px solid white;
+  padding-bottom: 50px;
+}
+.app-section .install-app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.app-section .install-app img {
+  max-width: 500px;
+  flex: 1;
+}
+.app-section .install-app div img {
+  max-width: 200px;
+  height: 80px;
+  padding: 10px 10px 0 0;
+}
+.app-section .install-app div p {
+  margin-top: 10px;
+}
+@media (max-width: 800px) {
+  .app-section .install-app {
+    flex-direction: column;
   }
 }
 .button1 {
