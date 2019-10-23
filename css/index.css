@@ -454,6 +454,15 @@ footer .footer-links nav a:hover {
   color: black;
   cursor: pointer;
 }
+.about-hero {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+.about-hero p {
+  margin-top: 10px;
+}
 .the-team {
   background: #ffc107;
 }
