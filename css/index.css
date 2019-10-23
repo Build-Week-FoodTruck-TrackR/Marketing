@@ -331,6 +331,12 @@ footer .footer-links nav a:hover {
 .intro-section div.intro-img {
   width: 50%;
   padding: 50px;
+  animation: slide-in 1s forwards;
+}
+@keyframes slide-in {
+  10% {
+    transform: translateX(-100%);
+  }
 }
 @media (max-width: 800px) {
   .intro-section div.intro-img {
@@ -455,6 +461,15 @@ footer .footer-links nav a:hover {
 .vendor-list div img:hover {
   cursor: pointer;
   opacity: unset;
+  animation: bounce 0.2s 4 alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
 }
 .vendor-list div h4 {
   text-align: center;

@@ -11,6 +11,12 @@
   div.intro-img {
     width: 50%;
     padding: 50px;
+    animation: slide-in 1s forwards;
+    @keyframes slide-in {
+      10% {
+        transform: translateX(-100%);
+      }
+    }
 
     @media @tablet {
       display: none;
@@ -95,6 +101,7 @@
       width: unset;
     }
   }
+
   div img {
     border-radius: 250px;
     opacity: 0.7;
@@ -102,6 +109,15 @@
     &:hover {
       cursor: pointer;
       opacity: unset;
+      animation: bounce 0.2s 4 alternate;
+      @keyframes bounce {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-5px);
+        }
+      }
     }
   }
 
