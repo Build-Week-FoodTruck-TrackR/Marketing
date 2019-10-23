@@ -348,6 +348,7 @@ footer .footer-links nav a:hover {
 @media (max-width: 800px) {
   .intro-section div.intro-text {
     max-width: unset;
+    padding: unset;
   }
 }
 @media (max-width: 800px) {
