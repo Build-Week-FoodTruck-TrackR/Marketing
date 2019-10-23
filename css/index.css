@@ -394,6 +394,38 @@ footer .footer-links nav a:hover {
     flex-wrap: nowrap;
   }
 }
+.vendor-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.vendor-list div {
+  width: calc(33% - 20px);
+}
+@media (max-width: 800px) {
+  .vendor-list div {
+    width: unset;
+  }
+}
+.vendor-list div img {
+  border-radius: 250px;
+  opacity: 0.7;
+}
+.vendor-list div img:hover {
+  cursor: pointer;
+  opacity: unset;
+}
+.vendor-list div h4 {
+  text-align: center;
+  margin: 20px;
+}
+@media (max-width: 800px) {
+  .vendor-list {
+    flex-direction: column;
+  }
+}
 .app-section {
   background: #ffc107;
   color: black;
