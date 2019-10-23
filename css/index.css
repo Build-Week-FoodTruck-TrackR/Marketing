@@ -424,11 +424,15 @@ footer .footer-links nav a:hover {
   color: black;
   cursor: pointer;
 }
+.about-us h2 {
+  text-align: center;
+  padding: 5%;
+}
 .the-team {
   background: #ffc107;
+  padding-top: 5%;
 }
 .the-team h2 {
-  padding-top: 40px;
   text-align: center;
 }
 .the-team .team-info {
@@ -466,4 +470,95 @@ footer .footer-links nav a:hover {
 .the-team .team-info div i:hover {
   color: #ffc107;
   font-size: 3.2rem;
+}
+.container-form {
+  background: #FFDC00;
+  line-height: 1.6;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1em;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-form ul {
+  text-decoration: none;
+  padding: 0;
+}
+.container-form ul a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+}
+.container-form .brand {
+  text-align: center;
+}
+.container-form .brand span {
+  color: #FF851B;
+}
+.container-form .wrapper {
+  box-shadow: 0 0 20px rgba(72, 94, 116, 0.7);
+}
+@media (min-width: 700px) {
+  .container-form .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .container-form .wrapper .wrapper > * {
+    padding: 2em;
+  }
+}
+.container-form .wrapper > * {
+  padding: 1em;
+}
+.container-form .company {
+  background: #FF851B;
+}
+@media (min-width: 700px) {
+  .container-form .company .company h3,
+  .container-form .company .company ul,
+  .container-form .company .brand {
+    text-align: left;
+  }
+}
+.container-form .company h3,
+.container-form .company ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+.container-form .contact {
+  background: #ec9b3b;
+}
+.container-form .contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.container-form .contact form label {
+  display: block;
+}
+.container-form .contact form p {
+  margin: 0;
+}
+.container-form .contact form .full {
+  grid-column: 0.33333333;
+}
+.container-form .contact form button,
+.container-form .contact form input,
+.container-form .contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #c9e6ff;
+}
+.container-form .contact form button {
+  background: #c9e6ff;
+  border: 0;
+  text-transform: uppercase;
+}
+.container-form .contact form button:hover,
+.container-form .contact form button:focus {
+  background: #92bde7;
+  color: #fff;
+  outline: 0;
+  transition: background-color 2s ease-out;
 }
