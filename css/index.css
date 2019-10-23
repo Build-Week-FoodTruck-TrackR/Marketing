@@ -457,6 +457,8 @@ footer .footer-links nav a:hover {
 .vendor-list div img {
   border-radius: 250px;
   opacity: 0.7;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  border: 5px solid black;
 }
 .vendor-list div img:hover {
   cursor: pointer;
