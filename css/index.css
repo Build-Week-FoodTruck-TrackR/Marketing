@@ -345,6 +345,36 @@ footer .footer-links nav a:hover {
   margin: 10px 0;
   line-height: 1.5;
 }
+.intro-section div.intro-text .button1 {
+  background: black;
+  border: unset;
+  font-size: 1.6rem;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.intro-section div.intro-text .button1:hover {
+  background: white;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+.intro-section div.intro-text .button2 {
+  background: #ffc107;
+  border: unset;
+  font-size: 1.6rem;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid #ffc107;
+}
+.intro-section div.intro-text .button2:hover {
+  background: white;
+  border: 1px solid #ffc107;
+  color: black;
+  cursor: pointer;
+}
 @media (max-width: 800px) {
   .intro-section div.intro-text {
     max-width: unset;
@@ -464,36 +494,6 @@ footer .footer-links nav a:hover {
   .app-section .install-app {
     flex-direction: column;
   }
-}
-.button1 {
-  background: black;
-  border: unset;
-  font-size: 1.6rem;
-  color: white;
-  padding: 15px 25px;
-  border-radius: 10px;
-  border: 1px solid black;
-}
-.button1:hover {
-  background: white;
-  border: 1px solid black;
-  color: black;
-  cursor: pointer;
-}
-.button2 {
-  background: #ffc107;
-  border: unset;
-  font-size: 1.6rem;
-  color: white;
-  padding: 15px 25px;
-  border-radius: 10px;
-  border: 1px solid #ffc107;
-}
-.button2:hover {
-  background: white;
-  border: 1px solid #ffc107;
-  color: black;
-  cursor: pointer;
 }
 .about-hero {
   background: black;
