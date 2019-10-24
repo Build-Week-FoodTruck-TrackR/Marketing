@@ -6,8 +6,8 @@ header {
   .flexbox(row, space-evenly, center, nowrap);
   margin: 0 auto;
   padding: 25px 0;
-  // width: 55%;
-  img {
+
+  > img {
     height: 50px;
 
     @media @tablet {
@@ -15,7 +15,7 @@ header {
     }
 
     @media @mobile {
-      margin-bottom: unset;
+      display: none;
     }
   }
   nav {
@@ -31,14 +31,51 @@ header {
         padding: 20px 0;
       }
     }
-
     @media @mobile {
-      flex-direction: column;
-      text-align: center;
+      display: none;
     }
   }
 
   @media @tablet {
     flex-direction: column;
+  }
+}
+
+//--------------------------------
+// Mobile Menu Style
+//--------------------------------
+
+.mobile-nav {
+  display: none;
+
+  .flex {
+    .flexbox(row, space-between, center, nowrap);
+
+    img {
+      height: 50px;
+    }
+
+    a {
+      font-size: 4rem;
+      color: white;
+      margin-left: 50px;
+    }
+  }
+  @media @mobile {
+    display: unset;
+  }
+}
+
+#mobile-menu {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  a {
+    .nav-links();
+    padding: 0 20px;
+    border-bottom: 2px solid @main-color;
+    width: 70vw;
+    font-size: 1.8rem;
+    padding: 20px 0;
   }
 }
