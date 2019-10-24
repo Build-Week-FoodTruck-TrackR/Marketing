@@ -1,121 +1,163 @@
 .section-header {
-    padding: 50px;
-    text-align: center;
+  padding: 50px;
+  text-align: center;
 }
 
 .intro-section {
-   background: white;
-    .flexbox(row, space-evenly, center, nowrap);
+  background: white;
+  margin: 100px 0;
+  .flexbox(row, space-evenly, center, nowrap);
 
-    div.intro-img {
-        margin-top: 100px;
-        width: 50%;
-        padding: 50px;
-
-        @media @mobile {
-            display: none;
-        }
+  div.intro-img {
+    width: 50%;
+    padding: 50px;
+    animation: slide-in 1s forwards;
+    @keyframes slide-in {
+      10% {
+        transform: translateX(-100%);
+      }
     }
 
-    div.intro-text {
-        margin-top: 100px;
-        width: 50%;
-        padding: 50px;
-
-        @media @mobile {
-            width: 90%;
-        }
+    @media @tablet {
+      display: none;
     }
+  }
+
+  div.intro-text {
+    max-width: 50%;
+    padding: 30px;
+
+    p {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+
+    .button1 {
+      .button-black();
+    }
+
+    .button2 {
+      .button-yellow();
+    }
+
+    @media @tablet {
+      max-width: unset;
+      padding: unset;
+    }
+  }
+
+  @media @tablet {
+    margin: 50px;
+  }
 }
-
-
 
 .how-it-works {
   background: #f2f2f2;
-    div.flex{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding-bottom: 50px;
-        .flexbox(row, space-evenly, center, nowrap);
-        div.info-box {
-            width: calc(50% - 50px);
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.2);
+  div.flex {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    .flexbox(row, space-evenly, center, nowrap);
+    div.info-box {
+      width: calc(50% - 50px);
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
 
-            h2{
-                text-align: center;
-            }
-            ul li {
-                padding: 10px 20px;
-                font-size: 2.0rem;
+      h2 {
+        text-align: center;
+      }
+      ul li {
+        padding: 10px 20px;
+        font-size: 2rem;
 
-                &:hover {
-                    cursor: pointer;
-                    font-size: 2.2rem;
-                    color: @main-color;
-                }
-            }
-
-            @media @tablet {
-                width: 80%;
-                margin-top: 20px;
-            }
+        &:hover {
+          cursor: pointer;
+          font-size: 2.2rem;
+          color: @main-color;
         }
+      }
 
-        @media @tablet {
-            .flexbox(column, space-evenly, center, nowrap);
-        }
+      @media @tablet {
+        width: 80%;
+        margin-top: 20px;
+      }
     }
+
+    @media @tablet {
+      .flexbox(column, space-evenly, center, nowrap);
+    }
+  }
 }
 
+.vendor-list {
+  .flexbox(row, space-evenly, flex-start, nowrap);
+
+  div {
+    width: calc(33% - 20px);
+
+    @media @tablet {
+      width: unset;
+    }
+  }
+
+  div img {
+    border-radius: 250px;
+    opacity: 0.7;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    border: 5px solid black;
+    &:hover {
+      cursor: pointer;
+      opacity: unset;
+      animation: bounce 0.2s 4 alternate;
+      @keyframes bounce {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+
+  div h4 {
+    text-align: center;
+    margin: 20px 0 40px;
+  }
+
+  @media @tablet {
+    flex-direction: column;
+  }
+}
 
 .app-section {
-    background: @main-color;
-    color: black;
-    border-bottom: 2px solid white;
-    padding-bottom: 50px;
+  background: @main-color;
+  color: black;
+  border-bottom: 2px solid white;
+  padding-bottom: 50px;
 
-    .install-app {
-        .flexbox(row, space-evenly, flex-start, nowrap);
+  .install-app {
+    .flexbox(row, space-evenly, flex-start, nowrap);
 
-        img {
-            max-width: 500px;
-            flex: 1;
-        }
-
-        div img {
-            max-width: 200px;
-            height: 80px;
-            padding: 10px 10px 0 0;
-        }
-
-        div p {
-            margin-top: 10px;
-        }
-
-        @media @tablet {
-            flex-direction: column;
-        }
+    img {
+      max-width: 500px;
+      flex: 1;
     }
+
+    div img {
+      max-width: 200px;
+      height: 80px;
+      padding: 10px 10px 0 0;
+    }
+
+    div p {
+      margin-top: 10px;
+    }
+
+    @media @tablet {
+      flex-direction: column;
+    }
+  }
 }
-
-
-
-
-
-
-
-// ------------------------------------------------------------
-
-.button1 {
-    .button-black();
-}
-
-.button2 {
-    .button-yellow();
-}
-
-
-// -------------------------------------------------------------

@@ -1,52 +1,52 @@
 .flexbox(@flexdir: row, @justify-content, @align-items, @flex-wrap) {
-    display: flex;
-    flex-direction: @flexdir;
-    justify-content: @justify-content;
-    align-items: @align-items;
-    flex-wrap: @flex-wrap;
+  display: flex;
+  flex-direction: @flexdir;
+  justify-content: @justify-content;
+  align-items: @align-items;
+  flex-wrap: @flex-wrap;
 }
 
 .nav-links() {
-    text-decoration: none;
-    color: white;
-    font-size: 1.6rem;
-    text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  text-transform: uppercase;
 
-    &:hover {
-        color: @main-color;
-    }
+  &:hover {
+    color: @main-color;
+  }
 }
 
 .button-black() {
-    background: black;
-    border: unset;
-    font-size: 1.6rem;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    border: 1px solid black;
+  background: black;
+  border: unset;
+  font-size: 1.6rem;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid black;
 
-    &:hover {
-        background: white;
-        border: 1px solid black;
-        color: black;
-        cursor: pointer;
-    }
+  &:hover {
+    background: white;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+  }
 }
 
 .button-yellow {
-    background: @main-color;
-    border: unset;
-    font-size: 1.6rem;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    border: 1px solid @main-color;
+  background: @main-color;
+  border: unset;
+  font-size: 1.6rem;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid @main-color;
 
-    &:hover {
-        background: white;
-        border: 1px solid @main-color;
-        color: black;
-        cursor: pointer;
-    }
+  &:hover {
+    background: white;
+    border: 1px solid @main-color;
+    color: black;
+    cursor: pointer;
+  }
 }
