@@ -1,119 +1,58 @@
-// Contact Container 
+.contact-hero {
+  background: black;
+  height: 150px;
+  h2 {
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+  }
+}
 
-.container-form { // start of container form
-    background: #FFDC00;
-    line-height: 1.6;
-    height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-    padding: 1em;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-
-    ul { // form ul
-        text-decoration: none;
-        padding: 0;
-
-        
-            a {
-                text-decoration: none;
-                font-size: 1.6rem;
-                color: black;
-            }
-        
-    } // end of ul
-
-    .brand { // brand
-        text-align: center;
-
-        span { // brand span
-            color: #FF851B;
-        } // end of brand span
+.contact {
+  .flexbox(row, space-between, center, nowrap);
+  margin: 50px 0;
+  .contact-form {
+    flex-grow: 2;
+    padding: 10px 30px;
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      border: unset;
+      font-family: inherit;
+      font-size: 1.8rem;
+      width: 100%;
     }
 
-    .wrapper { // wrapper div
-        box-shadow: 0 0 20px rgba(72,94,116,0.7);
-
-        @media @desktop{
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-
-            .wrapper > * {
-                padding: 2em;
-            }
-        }
+    .submit {
+      .button-black();
+      margin-top: 15px;
     }
 
-    .wrapper > * { 
-        padding: 1em;
+    @media @tablet {
+      padding: unset;
+      margin-bottom: 30px;
     }
+  }
 
-    .company { // company 
-        background: #FF851B;
+  .contact-details {
+    ul li {
+      font-size: 1.8rem;
+      padding: 20px 20px;
+      border-bottom: 2px solid white;
+      background: @main-color;
 
-        @media @desktop{
-            .company h3, .company ul, .brand {
-                text-align: left;
-            }
-        }
+      i {
+        margin-right: 20px;
+      }
+    }
+  }
 
-        h3, ul{
-            text-align: center;
-            margin: 0 0 1rem 0;
-        }
-
-       
-       
-    } // end of company
-
-    .contact { // beginning of contact
-        background: #ec9b3b;
-       
-
-        form { // form
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 20px;
-
-            label {
-                display: block;
-            }
-
-            p {
-                margin: 0;
-            }
-
-            .full {
-                grid-column: 1 / 3;
-            }
-
-            button, input, textarea {
-                width: 100%;
-                padding: 1em;
-                border: 1px solid #c9e6ff;
-            }
-
-            button {
-                background: #c9e6ff;
-                border: 0;
-                text-transform: uppercase;
-
-                &:hover, &:focus {
-                    background: #92bde7;
-                    color: #fff;
-                    outline: 0;
-                    transition: background-color 2s ease-out;
-                }
-            }
-
-        } // end of form
-
-        
-    } // end of contact 
-
-
-
-
-    
-
-}  // end of container form
+  @media @tablet {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
