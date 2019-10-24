@@ -216,7 +216,7 @@ header {
   align-items: center;
   flex-wrap: nowrap;
   margin: 0 auto;
-  padding: 25px 0;
+  padding: 10px 0;
 }
 header > img {
   height: 50px;
